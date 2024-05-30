@@ -1,19 +1,21 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./screens/home/home";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
+import About from "./screens/about/about";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<About/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
