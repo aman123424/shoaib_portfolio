@@ -2,6 +2,7 @@ import React from 'react';
 import './about.scss'
 import aboutImg from '../../assets/images/about2.webp'
 import Typewriter from '../../components/typewriter/typewriter';
+import MissionComponent from '../../components/missionComponent/missionComponent';
 
 type AboutProps = {
     
@@ -20,6 +21,7 @@ const About:React.FC<AboutProps> = () => {
                 <div className='topbar-text'>
                     <div className='EPI'>Expertise, Passion and Innovation</div>
                     <Typewriter texts={texts}/>
+                    <MissionComponent />
                 </div>
             </div>
         </div>
